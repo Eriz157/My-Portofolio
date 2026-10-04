@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erizq Affanditya Nursin | Information Systems Student</title>
+  <meta name="description" content="Personal portfolio of Erizq Affanditya Nursin, an Information Systems student interested in software development, databases, artificial intelligence, data science, and cloud computing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&family=Playfair+Display:wght@700;800&family=Pinyon+Script&family=Bodoni+Moda:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/galeri.css">
+  <script>/* Apply saved theme before paint (avoids flash) */
+    try { document.documentElement.dataset.theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); } catch (e) {}
+  </script>
+</head>
+<body>
+<!-- ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.2-1.74 2.89 2.89 0 0 1 2.31-1.42V9.05a6.34 6.34 0 1 0 6.34 6.34V9.33a7.84 7.84 0 0 0 4.77 1.6V7.48a4.85 4.85 0 0 1-1.00-.79z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"></line></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM22 6l-10 7L2 6"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="curtain" id="curtain" aria-hidden="true"><span></span></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#home" aria-label="Erizq - Home">erizq<span>.</span></a>
+    <nav id="menu" class="menu" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#education">Education</a><a href="#galeri">Gallery</a>
+      <a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+      <a class="btn btn-sm menu-cv" href="assets/CV_Erizq_Affanditya_Nursin.pdf" target="_blank">Download CV</a>
+    </nav>
+    <div class="nav-tools">
+      <a class="btn btn-sm nav-cv" href="assets/CV_Erizq_Affanditya_Nursin.pdf" target="_blank">Download CV</a>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch theme">
+        <svg class="ic ic-moon"><use href="#i-moon"/></svg><svg class="ic ic-sun"><use href="#i-sun"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="greeting" id="greeting">Hello</p>
+      <h1>Hi, I'm Erizq Affanditya Nursin</h1>
+      <p class="role">Information Systems Student</p>
+      <p class="lead">I’m an Information Systems student interested in software development, database, artificial intelligence, data science, and cloud computing.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">View My Projects</a>
+        <a class="btn btn-ghost" href="assets/CV_Erizq_Affanditya_Nursin.pdf" target="_blank">Download CV</a>
+      </div>
+      <ul class="social" aria-label="Social media">
+        <li><a href="https://github.com/Eriz157" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a></li>
+        <li><a href="https://www.tiktok.com/@unseenrizz" aria-label="TikTok"><svg class="ic"><use href="#i-tiktok"/></svg></a></li>
+        <li><a href="https://www.instagram.com/riez_ospheree" aria-label="Instagram"><svg class="ic"><use href="#i-instagram"/></svg></a></li>
+        <li><a href="mailto:ezetlyore@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a></li>
+      </ul>
+    </div>
+    <div class="hero-lanyard" aria-hidden="true"></div><!-- spacer: keeps the right column free for the lanyard -->
+  </div>
+
+  <!-- Interactive lanyard (js/lanyard.js): free-floating overlay, not boxed. Card photo: assets/images/profile.jpg -->
+  <section id="lanyard-hero" aria-label="Interactive lanyard card of Erizq. Drag the card to play with it.">
+    <canvas id="lanyard-canvas" role="img" aria-label="Lanyard card showing Erizq's profile photo"></canvas>
+    <div hidden>
+      <div id="lanyard-ui"><button type="button" id="lanyard-replay"></button><button type="button" id="lanyard-photo-btn"></button><input type="file" id="lanyard-photo-input"></div>
+      <div id="lanyard-hint"></div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="sec reveal">
+  <div class="wrap">
+    <h2>About Me</h2>
+    <div class="stage">
+      <div class="s-visual">
+        <div class="s-title" aria-hidden="true">
+          <p class="s-name"><span style="--j:0">E</span><span style="--j:1">R</span><span style="--j:2">I</span><span style="--j:3">Z</span><span style="--j:4">Q</span></p>
+          <span class="s-script">Affanditya Nursin</span>
+        </div>
+        <img class="s-photo" src="assets/images/profile-cutout.webp" alt="Portrait of Erizq in a red Universitas Hasanuddin jacket with arms crossed">
+      </div>
+      <div class="s-left">
+        <div class="s-info">
+          <div><span>Education</span><b>Universitas Hasanuddin</b></div>
+          <div><span>Major</span><b>Information Systems</b></div>
+        </div>
+        <div class="s-copy">
+          <p>I am an Information Systems student at Universitas Hasanuddin with an interest in technology and software development. I enjoy learning how software, databases, and information systems can be used to solve real-world problems.</p>
+          <p>Currently, I am developing my skills in programming, database management, web development, and data-related technologies. I am also interested in exploring Artificial Intelligence, Data Science, and Cloud Computing.</p>
+        </div>
+      </div>
+      <div class="s-right">
+        <div class="s-info">
+          <div><span>Current Semester</span><b>3</b></div>
+          <div><span>Focus</span><b>Software Development &amp; Data</b></div>
+        </div>
+        <div class="s-copy">
+          <p>I believe that building projects is one of the best ways to improve my technical skills, so I continuously work on academic and personal projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="sec reveal">
+  <img class="bgp" src="assets/images/bg-skills.jpg" alt="" aria-hidden="true" loading="lazy">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">Grouped by area. No percentages, since they say little about real ability.</p>
+    <div class="skill-grid" id="skillGrid"><!-- rendered from SKILLS in js/script.js --></div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="sec reveal">
+  <div class="wrap">
+    <h2>Featured Projects</h2>
+    <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+    <div class="proj-grid" id="projGrid"><!-- rendered from PROJECTS in js/script.js --></div>
+    <div class="center"><a class="btn btn-ghost" href="https://github.com/Eriz157">View All Projects</a></div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="sec reveal">
+  <img class="bgp" src="assets/images/bg-education.jpg" alt="" aria-hidden="true" loading="lazy">
+  <div class="wrap">
+    <h2>Education</h2>
+    <ol class="timeline">
+      <li>
+        <span class="dot" aria-hidden="true"></span>
+        <h3>Universitas Hasanuddin</h3>
+        <p class="meta">Bachelor of Information Systems &middot; 2025 - Present &middot; Makassar, Indonesia</p>
+        <p>Currently studying Information Systems with a growing interest in software development, databases, artificial intelligence, data science, and cloud computing.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<!-- ============ QUOTE ============ -->
+<section id="quote" class="quote reveal" aria-labelledby="quoteTitle">
+  <h2 class="sr-only" id="quoteTitle">Quote</h2>
+  <div class="wrap">
+    <p class="q-kick">A reminder</p>
+    <blockquote class="q-text" id="qText"><span class="qw">Ad</span> <span class="qw">Maiora</span> <span class="qw">Natus</span> <span class="qw">Sum</span></blockquote>
+    <p class="q-sub" id="qSub">~ I was born for greater things</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY (css/galeri.css, js/galeri.js) ============ -->
+<section id="galeri" aria-label="Galeri">
+  <div class="gal-aurora gal-a1"></div><div class="gal-aurora gal-a2"></div>
+  <div class="gal-wrap">
+    <header class="gal-head">
+      <div class="gal-headtext">
+        <p class="gal-eyebrow"><span class="dot"></span><span id="gal-eyebrow"></span></p>
+        <h2 class="gal-title" id="gal-title">Galeri</h2>
+        <p class="gal-desc" id="gal-desc"></p>
+      </div>
+      <div class="gal-tabs" id="gal-tabs" role="tablist" aria-label="Subsection galeri"><span class="gal-ind" id="gal-ind"></span></div>
+    </header>
+
+    <div class="gal-stage" id="gal-stage" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Galeri gambar. Gunakan panah kiri dan kanan.">
+      <div class="gal-track" id="gal-track"></div>
+    </div>
+
+    <div class="gal-cap" aria-live="polite"><h3 id="gal-cap-title"></h3><p id="gal-cap-meta"></p></div>
+
+    <div class="gal-ctrl">
+      <div class="gal-count"><b id="gal-cur">01</b><span>/ <i id="gal-total">06</i></span></div>
+      <div class="gal-nav">
+        <button class="gal-btn" id="gal-prev" type="button" aria-label="Sebelumnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <div class="gal-dots" id="gal-dots"></div>
+        <button class="gal-btn" id="gal-next" type="button" aria-label="Berikutnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+      <p class="gal-hint">Seret · scroll · ← →</p>
+    </div>
+  </div>
+
+  <div class="gal-lb" id="gal-lb" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Pratinjau gambar">
+    <button class="gal-btn lb-x" id="lb-x" type="button" aria-label="Tutup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="gal-btn lb-p" id="lb-p" type="button" aria-label="Sebelumnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <figure><img id="lb-img" alt=""><figcaption><b id="lb-t"></b><span id="lb-m"></span></figcaption></figure>
+    <button class="gal-btn lb-n" id="lb-n" type="button" aria-label="Berikutnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section id="certificates" class="sec reveal">
+  <div class="wrap">
+    <h2>Certificates</h2>
+    <p class="sub">Certificates will be added soon.</p>
+    <div class="cert-grid">
+      <article class="cert"><h3>International Arithmetic</h3><p>UMC - UC MAS</p><span>2016</span><a class="btn btn-sm btn-ghost" href="[Certificate URL]">View Certificate</a></article>
+      <article class="cert"><h3>Nationale Deutscholympiade</h3><p>IGBJI - GOETHE INSTITUDE</p><span>2023</span><a class="btn btn-sm btn-ghost" href="[Certificate URL]">View Certificate</a></article>
+      <article class="cert"><h3>TESIS 159</h3><p>SALIS 159</p><span>2024</span><a class="btn btn-sm btn-ghost" href="[Certificate URL]">View Certificate</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTIVITIES (hidden until real data exists: remove `hidden` to show) ============ -->
+<section id="activities" class="sec" hidden>
+  <div class="wrap">
+    <h2>Activities &amp; Achievements</h2>
+    <div class="cert-grid">
+      <article class="cert"><h3>[Activity / Achievement Name]</h3><p>[Short Description]</p><span>[Year]</span><a class="btn btn-sm btn-ghost" href="[Link if available]">View</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CV CTA ============ -->
+<section class="cv reveal" aria-labelledby="cvTitle">
+  <div class="wrap cv-in">
+    <div>
+      <h2 id="cvTitle">Interested in knowing more about me?</h2>
+      <p>Feel free to download my CV to learn more about my education, skills, projects, and experience.</p>
+    </div>
+    <a class="btn" href="assets/CV_Erizq_Affanditya_Nursin.pdf" target="_blank">Download CV</a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="sec reveal">
+  <div class="wrap">
+    <h2>Let's Connect</h2>
+    <div class="contact-grid">
+      <div>
+        <p class="lead">Have a project, opportunity, or just want to connect? Feel free to reach out.</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:ezetlyore@gmail.com">ezetlyore@gmail.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/Eriz157">Eriz157</a></li>
+          <li><span>Instagram</span><a href="https://www.instagram.com/riez_ospheree">riez_ospheree</a></li>
+          <li><span>TikTok</span><a href="https://www.tiktok.com/@unseenrizz">@unseenriz</a></li>
+        </ul>
+      </div>
+      <form id="contactForm" class="form" novalidate>
+        <label for="cName">Name</label>
+        <input id="cName" name="name" type="text" autocomplete="name" required>
+        <small class="err" id="eName"></small>
+        <label for="cEmail">Email</label>
+        <input id="cEmail" name="email" type="email" autocomplete="email" required>
+        <small class="err" id="eEmail"></small>
+        <label for="cMsg">Message</label>
+        <textarea id="cMsg" name="message" rows="5" required></textarea>
+        <small class="err" id="eMsg"></small>
+        <button class="btn" type="submit">Send Message</button>
+        <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>© 2026 Erizq Affanditya Nursin. Built with passion and code.</p>
+    <ul class="social">
+      <li><a href="https://github.com/Eriz157" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a></li>
+      <li><a href="https://www.tiktok.com/@unseenrizz" aria-label="TikTok"><svg class="ic"><use href="#i-tiktok"/></svg></a></li>
+      <li><a href="https://www.instagram.com/riez_ospheree" aria-label="Instagram"><svg class="ic"><use href="#i-instagram"/></svg></a></li>
+      <li><a href="mailto:mailto:ezetlyore@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Project detail modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+  <div class="modal-box">
+    <button class="icon-btn modal-x" id="modalX" type="button" aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<button class="totop" id="toTop" type="button" aria-label="Back to top"><svg class="ic"><use href="#i-up"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/lanyard.js"></script>
+<script src="js/script.js"></script>
+<script src="js/galeri.js"></script>
+</body>
+</html>
