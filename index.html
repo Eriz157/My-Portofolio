@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erizq Affanditya Nursin | Information Systems Student</title>
+  <meta name="description" content="Personal portfolio of Erizq Affanditya Nursin, an Information Systems student interested in software development, databases, artificial intelligence, data science, and cloud computing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&family=Playfair+Display:wght@700;800&family=Pinyon+Script&family=Bodoni+Moda:ital,wght@1,400;1,500&family=Caveat:wght@600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>/* Apply saved theme before paint (avoids flash) */
+    try { document.documentElement.dataset.theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); } catch (e) {}
+  </script>
+</head>
+<body>
+<!-- ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.2-1.74 2.89 2.89 0 0 1 2.31-1.42V9.05a6.34 6.34 0 1 0 6.34 6.34V9.33a7.84 7.84 0 0 0 4.77 1.6V7.48a4.85 4.85 0 0 1-1.00-.79z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"></line></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM22 6l-10 7L2 6"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+</svg>
+
+<!-- DOODLE SPRITE: hand-drawn ornaments (decorative only). Colour comes from CSS: color / --c -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="d-sparkle" viewBox="0 0 100 100"><path d="M50 4C53 33 67 47 96 50C67 53 53 67 50 96C47 67 33 53 4 50C33 47 47 33 50 4Z"/></symbol>
+  <symbol id="d-star5" viewBox="0 0 100 100"><path d="M50 7L62 37L94 39L69 59L78 91L50 73L22 91L31 59L6 39L38 37Z"/></symbol>
+  <symbol id="d-bolt" viewBox="0 0 100 100"><path d="M60 3L20 56H46L36 97L82 38H56Z"/></symbol>
+  <symbol id="d-heart" viewBox="0 0 100 100"><path d="M50 88C12 62 6 36 24 22C38 12 50 24 50 33C50 24 62 12 76 22C94 36 88 62 50 88Z"/></symbol>
+  <symbol id="d-burst" viewBox="0 0 100 100"><path d="M50.0 3.5 L58.2 14.0 L70.6 7.2 L72.9 21.3 L86.8 20.6 L83.9 33.7 L94.5 39.8 L88.0 50.0 L94.5 60.1 L84.1 66.4 L85.7 78.5 L72.9 78.7 L70.3 92.1 L58.7 88.0 L50.0 95.9 L41.7 86.2 L29.4 92.7 L25.5 80.8 L13.1 79.4 L16.0 66.4 L2.8 60.8 L13.4 50.0 L3.1 39.3 L16.3 33.8 L14.1 21.4 L27.0 21.2 L29.9 8.2 L41.3 12.0Z"/></symbol>
+  <symbol id="d-cross" viewBox="0 0 100 100"><path d="M50 10L51 90M12 48L90 52M24 22L77 78M78 22L23 77"/></symbol>
+  <symbol id="d-swirl" viewBox="0 0 100 100"><path d="M52 50C52 43 60 43 61 50C62 61 44 64 41 49C38 33 66 29 71 50C77 76 36 84 27 52C18 20 70 8 85 42"/></symbol>
+  <symbol id="d-ring" viewBox="0 0 100 100"><path d="M50 6C78 4 96 28 93 54C90 80 66 96 40 91C16 86 4 62 9 38C13 18 30 8 56 7C70 6 78 10 86 16"/></symbol>
+  <symbol id="d-plane" viewBox="0 0 100 100"><path d="M5 46L95 6L64 94L48 58ZM95 6L48 58"/></symbol>
+  <symbol id="d-cap" viewBox="0 0 100 100"><path d="M50 20L94 40L50 60L6 40ZM26 50V70C38 82 62 82 74 70V50M94 40V64"/></symbol>
+  <symbol id="d-brl" viewBox="0 0 100 100"><path d="M36 6C16 10 20 32 20 50C20 68 16 90 36 94"/></symbol>
+  <symbol id="d-brr" viewBox="0 0 100 100"><path d="M64 6C84 10 80 32 80 50C80 68 84 90 64 94"/></symbol>
+  <symbol id="d-quote" viewBox="0 0 100 100"><path d="M8 62C8 36 20 18 42 12L46 24C32 30 28 40 30 48C40 48 48 56 48 68C48 80 40 88 28 88C16 88 8 78 8 62ZM54 62C54 36 66 18 88 12L92 24C78 30 74 40 76 48C86 48 94 56 94 68C94 80 86 88 74 88C62 88 54 78 54 62Z"/></symbol>
+  <symbol id="d-dots" viewBox="0 0 100 100"><circle cx="20" cy="22" r="6"/><circle cx="52" cy="14" r="4"/><circle cx="80" cy="30" r="7"/><circle cx="34" cy="56" r="5"/><circle cx="66" cy="62" r="6"/><circle cx="18" cy="84" r="4"/><circle cx="84" cy="88" r="5"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="curtain" id="curtain" aria-hidden="true"><span></span></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#home" aria-label="Erizq - Home">erizq<span>.</span></a>
+    <nav id="menu" class="menu" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+      <a class="btn btn-sm menu-cv" href="assets/CV_Erizq_Affanditya_Nursin.pdf" target="_blank">Download CV</a>
+    </nav>
+    <div class="nav-tools">
+      <a class="btn btn-sm nav-cv" href="assets/CV_Erizq_Affanditya_Nursin.pdf" target="_blank">Download CV</a>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch theme">
+        <svg class="ic ic-moon"><use href="#i-moon"/></svg><svg class="ic ic-sun"><use href="#i-sun"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-deco" aria-hidden="true">
+    <span class="blob b-acc" style="--x:-9rem;--y:-6rem;--s:24rem;--xt:-8rem;--st:18rem;--xm:-7rem;--ym:-4rem;--sm:13rem"></span>
+    <span class="blob b-blue t2" style="--x:-8rem;--y:62%;--s:15rem;--st:11rem;--yt:78%"></span>
+    <span class="blob b-lime t3" style="--x:calc(100% - 7rem);--y:74%;--s:9rem"></span>
+    <svg class="o dd dash c-acc a-spin px t3" style="--x:49%;--y:20%;--s:29rem;--w:1.6;--d:-10;opacity:.4" viewBox="0 0 100 100"><use href="#d-ring"/></svg>
+    <svg class="o dd f c-lime a-twinkle px" style="--x:55%;--y:37%;--s:3.2rem;--d:14;--xt:84%;--yt:6%;--st:2.4rem;--xm:80%;--ym:11%;--sm:1.8rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd f c-yel a-wiggle px t2" style="--x:89%;--y:15%;--s:2.5rem;--r:14deg;--d:-18;--xt:6%;--yt:57%;--st:2rem" viewBox="0 0 100 100"><use href="#d-star5"/></svg>
+    <svg class="o dd f c-blue a-twinkle d2 px t2" style="--x:94%;--y:45%;--s:1.7rem;--d:22;--xt:90%;--yt:50%" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd f c-pink a-twinkle d3 px t3" style="--x:57%;--y:50%;--s:1.4rem;--d:-24" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd f c-lime a-flicker px t2" style="--x:84%;--y:71%;--s:2.8rem;--r:12deg;--d:16;--xt:88%;--yt:84%;--st:2.1rem" viewBox="0 0 100 100"><use href="#d-bolt"/></svg>
+    <svg class="o dd c-pink a-spin-slow px t2" style="--x:56%;--y:80%;--s:2rem;--w:5;--d:-14;--xt:60%;--yt:92%" viewBox="0 0 100 100"><use href="#d-cross"/></svg>
+    <svg class="o dd f c-pink a-pulse t3" style="--x:5%;--y:86%;--s:1.9rem;--r:-14deg" viewBox="0 0 100 100"><use href="#d-heart"/></svg>
+    <svg class="o dd f c-acc a-bob px t3" style="--x:66%;--y:88%;--s:4rem;--d:12;opacity:.7" viewBox="0 0 100 100"><use href="#d-dots"/></svg>
+    <svg class="o dd draw-load c-acc t3" style="--x:92%;--y:25%;--s:4.4rem;--w:3.6;--dl:1.5s" viewBox="0 0 100 100"><path d="M52 50C52 43 60 43 61 50C62 61 44 64 41 49C38 33 66 29 71 50C77 76 36 84 27 52C18 20 70 8 85 42" pathLength="1"/></svg>
+    <svg class="o dd draw-load c-lime t2" style="--x:calc(100% - 9.5rem);--y:57%;--s:5.4rem;--ar:2.2;--w:3.4;--dl:1.9s;--xt:62%;--yt:66%" viewBox="0 0 120 54"><path d="M4 40C16 6 28 6 38 28C46 46 56 46 66 22C74 4 88 6 98 30C104 44 112 40 116 30" pathLength="1"/></svg>
+    <span class="scroll-cue t3"><svg viewBox="0 0 24 40" class="dd"><rect x="4" y="2" width="16" height="26" rx="8"/><path class="wheel" d="M12 8V13"/><path d="M7 33L12 38L17 33"/></svg><b>scroll</b></span>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="greeting" id="greeting">Hello</p>
+      <h1>Hi, I'm <span class="hl">Erizq<svg class="hl-line dd" viewBox="0 0 200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M3 9C40 3 110 14 197 5" pathLength="1"/><path d="M12 19C60 13 120 22 188 15" pathLength="1"/></svg></span> Affanditya Nursin<span class="tag tag-blue t2" style="--r:5deg;--dl:1.1s" aria-hidden="true">Aspiring Developer</span></h1>
+      <p class="role">Information Systems Student<span class="tag tag-lime" style="--r:-6deg;--dl:1.3s" aria-hidden="true">Currently Learning</span></p>
+      <p class="lead">I’m an Information Systems student interested in software development, database, artificial intelligence, data science, and cloud computing.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">View My Projects</a>
+        <a class="btn btn-ghost" href="assets/CV_Erizq_Affanditya_Nursin.pdf" target="_blank">Download CV</a>
+        <span class="cta-note t3" aria-hidden="true"><svg class="dd" viewBox="0 0 150 80"><path d="M140 52C112 78 62 74 44 50C34 36 36 22 44 8" pathLength="1"/><path d="M30 20L44 6L58 20" pathLength="1"/></svg><b>start here!</b></span>
+      </div>
+      <ul class="social" aria-label="Social media">
+        <li><a href="https://github.com/Eriz157" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a></li>
+        <li><a href="https://www.tiktok.com/@unseenrizz" aria-label="TikTok"><svg class="ic"><use href="#i-tiktok"/></svg></a></li>
+        <li><a href="https://www.instagram.com/riez_ospheree" aria-label="Instagram"><svg class="ic"><use href="#i-instagram"/></svg></a></li>
+        <li><a href="mailto:ezetlyore@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a></li>
+        <li class="tag tag-pink t3" style="--r:4deg;--dl:1.5s" aria-hidden="true">Building Something Cool</li>
+      </ul>
+    </div>
+    <div class="hero-lanyard" aria-hidden="true"></div><!-- spacer: keeps the right column free for the lanyard -->
+  </div>
+
+  <!-- Interactive lanyard (js/lanyard.js): free-floating overlay, not boxed. Card photo: assets/images/profile.jpg -->
+  <section id="lanyard-hero" aria-label="Interactive lanyard card of Erizq. Drag the card to play with it.">
+    <canvas id="lanyard-canvas" role="img" aria-label="Lanyard card showing Erizq's profile photo"></canvas>
+    <div hidden>
+      <div id="lanyard-ui"><button type="button" id="lanyard-replay"></button><button type="button" id="lanyard-photo-btn"></button><input type="file" id="lanyard-photo-input"></div>
+      <div id="lanyard-hint"></div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="sec reveal">
+  <div class="wrap">
+    <h2>About Me</h2>
+    <div class="stage">
+      <div class="s-deco" aria-hidden="true">
+        <span class="rays"></span>
+        <span class="s-blob"></span>
+        <i class="halftone"></i>
+        <svg class="o dd f c-yel a-wiggle t2" style="--x:calc(50% - 15.5rem);--y:5%;--s:2.1rem;--r:-12deg" viewBox="0 0 100 100"><use href="#d-star5"/></svg>
+        <svg class="o dd f c-lime a-twinkle" style="--x:calc(50% + 10.5rem);--y:6%;--s:2.4rem;--xt:78%;--yt:3%;--st:1.8rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+        <svg class="o dd f c-blue a-twinkle d2 t2" style="--x:calc(50% - 12rem);--y:19%;--s:1.3rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+        <svg class="o dd f c-pink a-flicker t3" style="--x:calc(100% - 4.2rem);--y:40%;--s:2.4rem;--r:14deg" viewBox="0 0 100 100"><use href="#d-bolt"/></svg>
+        <svg class="o dd draw c-acc t2" style="--x:1.1rem;--y:1.1rem;--s:2.6rem;--w:4;--xt:.8rem" viewBox="0 0 100 100"><path d="M60 8C30 6 12 14 12 40V60" pathLength="1"/></svg>
+        <svg class="o dd draw c-acc t2" style="--x:calc(100% - 3.7rem);--y:calc(100% - 3.7rem);--s:2.6rem;--w:4" viewBox="0 0 100 100"><path d="M40 92C70 94 88 86 88 60V40" pathLength="1"/></svg>
+        <div class="sticky t3" style="--r:-5deg"><i class="tape"></i><b>Hello,</b><b>World!</b></div>
+      </div>
+      <div class="s-visual">
+        <div class="s-title" aria-hidden="true">
+          <p class="s-name"><span style="--j:0">E</span><span style="--j:1">R</span><span style="--j:2">I</span><span style="--j:3">Z</span><span style="--j:4">Q</span></p>
+          <span class="s-script">Affanditya Nursin</span>
+        </div>
+        <img class="s-photo" src="assets/images/profile-cutout.webp" alt="Portrait of Erizq in a red Universitas Hasanuddin jacket with arms crossed">
+      </div>
+      <div class="s-left">
+        <div class="s-info">
+          <div><span>Education</span><b class="u-line">Universitas Hasanuddin</b></div>
+          <div><span>Major</span><b>Information Systems</b></div>
+        </div>
+        <div class="s-copy">
+          <p>I am an Information Systems student at Universitas Hasanuddin with an interest in technology and software development. I enjoy learning how software, databases, and information systems can be used to solve real-world problems.</p>
+          <p>Currently, I am developing my skills in programming, database management, web development, and data-related technologies. I am also interested in exploring Artificial Intelligence, Data Science, and Cloud Computing.</p>
+        </div>
+      </div>
+      <div class="s-right">
+        <div class="s-info">
+          <div><span>Current Semester</span><b>3</b></div>
+          <div><span>Focus</span><b class="ring">Software Development &amp; Data</b></div>
+        </div>
+        <div class="s-copy">
+          <p>I believe that building projects is one of the best ways to improve my technical skills, so I continuously work on academic and personal projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS x BUILDING DIGITAL EXPERIENCES (merged; keeps #skills anchor + #skillGrid) ============ -->
+<section id="skills" class="edt" aria-labelledby="edtTitle">
+  <div class="edt-bg" aria-hidden="true"></div>
+  <div class="deco edt-deco" aria-hidden="true">
+    <svg class="o dd f c-red a-twinkle" style="--x:calc(var(--gut) + 46rem);--y:4.2rem;--s:2.2rem;--xt:62%;--yt:5rem;--xm:84%;--ym:4.2rem;--sm:1.5rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd f c-yel a-wiggle t2" style="--x:calc(100% - var(--gut) - 2rem);--y:9rem;--s:1.9rem;--r:12deg" viewBox="0 0 100 100"><use href="#d-star5"/></svg>
+    <svg class="o dd c-red a-spin-slow t3" style="--x:calc(var(--gut) + 46%);--y:calc(100% - 4.2rem);--s:1.7rem;--w:5" viewBox="0 0 100 100"><use href="#d-cross"/></svg>
+    <svg class="o dd f c-blue a-twinkle d2 t2" style="--x:calc(var(--gut) - 1.4rem);--y:46%;--s:1.2rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+  </div>
+  <div class="edt-wrap">
+    <p class="edt-label"><b>Skills</b><span>Grouped by area. No percentages, since they say little about real ability.</span></p>
+    <h2 class="edt-title" id="edtTitle">
+      <span class="edt-line" style="--i:0"><span>Building</span></span>
+      <span class="edt-line" style="--i:1"><span>Digital</span></span>
+      <span class="edt-line" style="--i:2"><span>Experiences</span></span>
+      <svg class="edt-scribble" viewBox="0 0 300 90" aria-hidden="true" focusable="false"><path d="M8 66L112 42L84 70L196 36L168 64L292 28" pathLength="1"/><path d="M30 80L150 58L124 84L250 56" pathLength="1"/></svg>
+    </h2>
+    <!-- layered portrait: red disc (behind title) < headline < photo (in front of title) -->
+    <div class="edt-figure">
+      <span class="edt-disc" aria-hidden="true"></span>
+      <span class="edt-ring" aria-hidden="true"></span>
+      <img class="edt-photo" src="assets/images/skills-portrait.webp" width="840" height="1194" alt="Erizq Affanditya Nursin wearing a red blazer" loading="lazy" decoding="async">
+      <svg class="edt-spark" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#d-sparkle"/></svg>
+    </div>
+    <div class="edt-aside">
+      <span class="note" aria-hidden="true">no fake % bars!</span>
+      <a class="edt-cta" href="#projects"><span>View my projects</span><i aria-hidden="true">&#8599;</i></a>
+    </div>
+    <div class="skill-grid" id="skillGrid"><!-- rendered from SKILLS in js/script.js --></div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS: scroll-driven card deck ============
+     Scrolling down (not sideways) pulls the next project in from the right and stacks it on top of the
+     previous one. Cards are rendered by js/script.js (PROJECTS), animated by js/project-deck.js. -->
+<section id="projects" class="sec proj-sec" aria-labelledby="pjTitle">
+  <div class="pj-track" id="pjTrack">
+    <div class="pj-stage" id="pjStage">
+      <div class="pj-glow" aria-hidden="true"></div>
+      <div class="deco" aria-hidden="true">
+        <svg class="o dd f c-acc a-twinkle" style="--x:calc(var(--pj-gut) + 15.2rem);--y:calc(var(--nav-h) + 1.4rem);--s:2.2rem;--xt:62%;--yt:calc(var(--nav-h) + .2rem);--xm:58%;--ym:calc(var(--nav-h) - .6rem);--sm:1.5rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+        <svg class="o dd f c-yel a-wiggle t2" style="--x:calc(var(--pj-gut) + 18rem);--y:calc(var(--nav-h) + .6rem);--s:1.6rem;--r:16deg;--xt:70%;--yt:calc(var(--nav-h) - .4rem)" viewBox="0 0 100 100"><use href="#d-star5"/></svg>
+        <svg class="o dd draw c-lime t3" style="--x:calc(100% - var(--pj-gut) - 13rem);--y:calc(var(--nav-h) + .2rem);--s:8rem;--ar:3.4;--w:3.4;--dl:.4s" viewBox="0 0 170 50"><path d="M4 30C20 8 34 8 44 28C54 46 66 46 78 24C88 6 102 8 112 28C122 44 136 40 166 14" pathLength="1"/></svg>
+        <svg class="o dd f c-blue a-flicker t3" style="--x:calc(100% - var(--pj-gut) + .6rem);--y:calc(var(--nav-h) + 3rem);--s:2.4rem;--r:12deg" viewBox="0 0 100 100"><use href="#d-bolt"/></svg>
+        <svg class="o dd f c-pink a-pulse t3" style="--x:calc(var(--pj-gut) + 26rem);--y:calc(100% - 3.1rem);--s:1.8rem;--r:-12deg" viewBox="0 0 100 100"><use href="#d-heart"/></svg>
+      </div>
+
+      <div class="pj-layout">
+        <aside class="pj-side">
+          <p class="pj-kicker"><span aria-hidden="true"></span>Selected work</p>
+          <h2 id="pjTitle">Featured Projects</h2>
+          <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+
+          <div class="pj-count" id="pjCount" aria-hidden="true">
+            <div class="pj-count-win"><div class="pj-count-col" id="pjCol"></div></div>
+            <span class="pj-count-of">/ <b id="pjTotal">05</b></span>
+          </div>
+
+          <ol class="pj-rail" id="pjRail" aria-label="Jump to project"></ol>
+
+          <div class="pj-meter" aria-hidden="true"><i id="pjBar"></i></div>
+          <p class="pj-hint" id="pjHint" aria-hidden="true">
+            <svg class="dd" viewBox="0 0 40 60"><path d="M20 4C10 18 30 30 20 52" pathLength="1"/><path d="M10 42L20 54L30 42" pathLength="1"/></svg>
+            <b class="h-go">scroll down, the next project slides in</b>
+            <b class="h-end">that is all of them</b>
+          </p>
+        </aside>
+
+        <!-- cards are injected here (id kept: the modal click handler listens on #projGrid) -->
+        <div class="pj-deck" id="projGrid"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center pj-more">
+    <span class="cta-arrow t2" aria-hidden="true"><b>more on GitHub</b><svg class="dd" viewBox="0 0 120 50"><path d="M4 8C40 -2 86 6 104 30" pathLength="1"/><path d="M86 32L106 32L100 12" pathLength="1"/></svg></span>
+    <a class="btn btn-ghost" href="https://github.com/Eriz157">View All Projects</a>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section id="quote" class="quote reveal" aria-labelledby="quoteTitle">
+  <h2 class="sr-only" id="quoteTitle">Quote</h2>
+  <div class="deco" aria-hidden="true">
+    <svg class="o dd f c-lime t2" style="--x:calc(var(--gut) + 1rem);--y:3.5rem;--s:5rem;opacity:.22;--r:-6deg" viewBox="0 0 100 100"><use href="#d-quote"/></svg>
+    <svg class="o dd f c-acc t2" style="--x:calc(100% - var(--gut) - 6rem);--y:calc(100% - 8.5rem);--s:5rem;opacity:.28;--r:174deg" viewBox="0 0 100 100"><use href="#d-quote"/></svg>
+    <svg class="o dd f c-white a-twinkle" style="--x:18%;--y:22%;--s:2rem;--xt:10%;--xm:8%;--ym:8%;--sm:1.3rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd f c-lime a-twinkle d2" style="--x:82%;--y:16%;--s:2.8rem;--xt:84%;--xm:84%;--ym:6%;--sm:1.8rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd f c-yel a-wiggle t2" style="--x:12%;--y:68%;--s:2.2rem;--r:-12deg" viewBox="0 0 100 100"><use href="#d-star5"/></svg>
+    <svg class="o dd f c-blue a-flicker t2" style="--x:89%;--y:56%;--s:2.6rem;--r:12deg" viewBox="0 0 100 100"><use href="#d-bolt"/></svg>
+    <svg class="o dd f c-pink a-twinkle d3 t2" style="--x:70%;--y:80%;--s:1.4rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd draw c-lime t3" style="--x:calc(50% + 15rem);--y:calc(100% - 7.6rem);--s:7rem;--ar:1.5;--w:3;--dl:.8s;opacity:.85" viewBox="0 0 150 100"><path d="M8 10C20 62 66 84 124 74" pathLength="1"/><path d="M104 56L126 74L100 86" pathLength="1"/></svg>
+    <svg class="spin-ring spin-scroll t2" viewBox="0 0 120 120"><defs><path id="ringPath" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><text><textPath href="#ringPath">AD MAIORA NATUS SUM · KEEP BUILDING · </textPath></text><use href="#d-star5" x="42" y="42" width="36" height="36" class="f"/></svg>
+  </div>
+
+  <div class="wrap">
+    <p class="q-kick">A reminder</p>
+    <blockquote class="q-text" id="qText"><span class="qw">Ad</span> <span class="qw">Maiora</span> <span class="qw">Natus</span> <span class="qw">Sum</span></blockquote>
+    <p class="q-sub" id="qSub">~ I was born for greater things</p>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section id="certificates" class="sec reveal">
+  <div class="deco" aria-hidden="true">
+    <svg class="o dd f c-yel a-wiggle" style="--x:calc(var(--gut) + 17.6rem);--y:5rem;--s:2rem;--r:12deg;--xt:18rem;--xm:15rem;--ym:3.4rem;--sm:1.5rem" viewBox="0 0 100 100"><use href="#d-star5"/></svg>
+    <svg class="o dd f c-lime a-twinkle d2" style="--x:calc(var(--gut) + 20.4rem);--y:6.4rem;--s:1.2rem;--xt:21rem;--xm:17.2rem;--ym:5rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <div class="sticky small t2" style="--x:calc(100% - var(--gut) - 11rem);--y:3.6rem;--r:4deg"><i class="tape"></i><b>more soon!</b></div>
+    <svg class="o dd f c-pink a-twinkle d3 t3" style="--x:calc(100% - var(--gut) + 1.6rem);--y:40%;--s:1.8rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd f c-acc a-flicker t3" style="--x:calc(var(--gut) - 3.2rem);--y:calc(100% - 9rem);--s:2.2rem;--r:-10deg" viewBox="0 0 100 100"><use href="#d-bolt"/></svg>
+  </div>
+  <div class="wrap">
+    <h2>Certificates</h2>
+    <p class="sub">Certificates will be added soon.</p>
+    <div class="cert-grid">
+      <article class="cert"><h3>International Arithmetic</h3><p>UMC - UC MAS</p><span>2016</span><a class="btn btn-sm btn-ghost" href="[Certificate URL]">View Certificate</a></article>
+      <article class="cert"><h3>Nationale Deutscholympiade</h3><p>IGBJI - GOETHE INSTITUDE</p><span>2023</span><a class="btn btn-sm btn-ghost" href="[Certificate URL]">View Certificate</a></article>
+      <article class="cert"><h3>TESIS 159</h3><p>SALIS 159</p><span>2024</span><a class="btn btn-sm btn-ghost" href="[Certificate URL]">View Certificate</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTIVITIES (hidden until real data exists: remove `hidden` to show) ============ -->
+<section id="activities" class="sec" hidden>
+  <div class="wrap">
+    <h2>Activities &amp; Achievements</h2>
+    <div class="cert-grid">
+      <article class="cert"><h3>[Activity / Achievement Name]</h3><p>[Short Description]</p><span>[Year]</span><a class="btn btn-sm btn-ghost" href="[Link if available]">View</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CV CTA ============ -->
+<section class="cv reveal" aria-labelledby="cvTitle">
+  <div class="deco" aria-hidden="true">
+    <svg class="o dd f c-lime a-twinkle" style="--x:5%;--y:14%;--s:2rem;--xm:90%;--ym:6%;--sm:1.4rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd f c-yel a-wiggle t2" style="--x:46%;--y:12%;--s:1.6rem;--r:14deg" viewBox="0 0 100 100"><use href="#d-star5"/></svg>
+    <svg class="o dd f c-white a-flicker t2" style="--x:3%;--y:62%;--s:2.2rem;--r:-10deg" viewBox="0 0 100 100"><use href="#d-bolt"/></svg>
+    <svg class="o dd c-white a-spin-slow" style="--x:40%;--y:70%;--s:1.5rem;--w:5;--xm:92%;--ym:80%;--sm:1.2rem" viewBox="0 0 100 100"><use href="#d-cross"/></svg>
+    <svg class="o dd draw c-lime t3" style="--x:calc(100% - var(--gut) - 17.4rem);--y:20%;--s:6.4rem;--ar:2.2;--w:3.6;--dl:.7s" viewBox="0 0 130 60"><path d="M6 14C40 -4 90 10 112 30" pathLength="1"/><path d="M92 36L114 32L106 10" pathLength="1"/></svg>
+    <span class="note t3" style="--x:calc(100% - var(--gut) - 26rem);--y:46%;--r:-5deg;--c:var(--accent-ink)">grab the full story</span>
+  </div>
+  <div class="wrap cv-in">
+    <div>
+      <h2 id="cvTitle">Interested in knowing more about me?</h2>
+      <p>Feel free to download my CV to learn more about my education, skills, projects, and experience.</p>
+    </div>
+    <a class="btn" href="assets/CV_Erizq_Affanditya_Nursin.pdf" target="_blank">Download CV</a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="sec reveal">
+  <div class="deco" aria-hidden="true">
+    <svg class="o dd f c-lime a-twinkle" style="--x:calc(var(--gut) + 14rem);--y:5rem;--s:2.2rem;--xt:14.4rem;--xm:13rem;--ym:3.3rem;--sm:1.6rem" viewBox="0 0 100 100"><use href="#d-sparkle"/></svg>
+    <svg class="o dd f c-pink a-pulse t2" style="--x:calc(var(--gut) + 17.2rem);--y:6rem;--s:1.5rem;--r:10deg" viewBox="0 0 100 100"><use href="#d-heart"/></svg>
+    <span class="plane-trail t3"><svg class="dd" viewBox="0 0 520 140" preserveAspectRatio="none"><path d="M4 110C70 20 170 10 230 60S350 130 420 70S480 20 516 40" pathLength="1"/></svg><svg class="plane dd c-acc" viewBox="0 0 100 100"><use href="#d-plane"/></svg></span>
+    <svg class="o dd f c-yel a-wiggle t3" style="--x:calc(100% - var(--gut) + 1.2rem);--y:48%;--s:1.9rem;--r:12deg" viewBox="0 0 100 100"><use href="#d-star5"/></svg>
+  </div>
+  <div class="wrap">
+    <h2>Let's Connect</h2>
+    <div class="contact-grid">
+      <div>
+        <p class="lead">Have a project, opportunity, or just want to connect? Feel free to reach out.</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:ezetlyore@gmail.com">ezetlyore@gmail.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/Eriz157">Eriz157</a></li>
+          <li><span>Instagram</span><a href="https://www.instagram.com/riez_ospheree">riez_ospheree</a></li>
+          <li><span>TikTok</span><a href="https://www.tiktok.com/@unseenrizz">@unseenriz</a></li>
+        </ul>
+        <div class="c-deco t2" aria-hidden="true">
+          <svg class="dd draw c-acc" style="--w:3.4" viewBox="0 0 220 120"><path d="M14 20C30 84 110 112 196 74" pathLength="1"/><path d="M170 52L198 74L168 92" pathLength="1"/></svg>
+          <b class="note" style="--r:-6deg">drop me a message!</b>
+          <svg class="o dd f c-pink a-pulse" style="--x:13rem;--y:6.7rem;--s:1.5rem;position:absolute" viewBox="0 0 100 100"><use href="#d-heart"/></svg>
+        </div>
+      </div>
+      <form id="contactForm" class="form" novalidate>
+        <label for="cName">Name</label>
+        <input id="cName" name="name" type="text" autocomplete="name" required>
+        <small class="err" id="eName"></small>
+        <label for="cEmail">Email</label>
+        <input id="cEmail" name="email" type="email" autocomplete="email" required>
+        <small class="err" id="eEmail"></small>
+        <label for="cMsg">Message</label>
+        <textarea id="cMsg" name="message" rows="5" required></textarea>
+        <small class="err" id="eMsg"></small>
+        <button class="btn" type="submit">Send Message</button>
+        <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="tape-strip" aria-hidden="true"><div class="tape-track"><span>Software Development</span><svg viewBox="0 0 100 100" class="f"><use href="#d-star5"/></svg><span>Database</span><svg viewBox="0 0 100 100" class="f"><use href="#d-sparkle"/></svg><span>Artificial Intelligence</span><svg viewBox="0 0 100 100" class="f"><use href="#d-bolt"/></svg><span>Data Science</span><svg viewBox="0 0 100 100" class="f"><use href="#d-star5"/></svg><span>Cloud Computing</span><svg viewBox="0 0 100 100" class="f"><use href="#d-sparkle"/></svg><span>Software Development</span><svg viewBox="0 0 100 100" class="f"><use href="#d-star5"/></svg><span>Database</span><svg viewBox="0 0 100 100" class="f"><use href="#d-sparkle"/></svg><span>Artificial Intelligence</span><svg viewBox="0 0 100 100" class="f"><use href="#d-bolt"/></svg><span>Data Science</span><svg viewBox="0 0 100 100" class="f"><use href="#d-star5"/></svg><span>Cloud Computing</span><svg viewBox="0 0 100 100" class="f"><use href="#d-sparkle"/></svg></div></div>
+  <div class="wrap foot-in">
+    <p>© 2026 Erizq Affanditya Nursin. Built with passion and code.</p>
+    <span class="foot-doodle t2" aria-hidden="true"><svg class="smiley dd" viewBox="0 0 100 100"><path d="M50 8C75 6 94 26 92 52C90 78 70 94 46 92C22 90 6 70 8 46C10 22 28 10 50 8Z"/><path class="eye" d="M34 38V50"/><path class="eye" d="M66 38V50"/><path d="M28 62C38 78 62 78 72 62"/></svg><b>thanks for scrolling!</b></span>
+    <ul class="social">
+      <li><a href="https://github.com/Eriz157" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a></li>
+      <li><a href="https://www.tiktok.com/@unseenrizz" aria-label="TikTok"><svg class="ic"><use href="#i-tiktok"/></svg></a></li>
+      <li><a href="https://www.instagram.com/riez_ospheree" aria-label="Instagram"><svg class="ic"><use href="#i-instagram"/></svg></a></li>
+      <li><a href="mailto:mailto:ezetlyore@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Project detail modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+  <div class="modal-box">
+    <button class="icon-btn modal-x" id="modalX" type="button" aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<button class="totop" id="toTop" type="button" aria-label="Back to top"><svg class="ic"><use href="#i-up"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/lanyard.js"></script>
+<script src="js/script.js"></script>
+<script src="js/project-deck.js"></script>
+<script src="js/reveal.js"></script>
+</body>
+</html>
